@@ -1,0 +1,46 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    height: auto;
+    width: 80%;
+    margin: 30px auto;
+    position: relative;
+}
+
+.offer {
+    margin: -10px 22px;
+    position: relative;;
+}
+
+.offer-title {
+    bottom: 35px;
+    color: #fff;
+    font-size: 18px;
+    left: 20px;
+    position: absolute;
+    z-index: 1;
+}
+
+.offer img {
+    border-radius: 10px;
+    height: 453px;
+    width: 453px;
+    object-fit: cover;
+    margin: 30px 0px;
+}
+
+.offerImg-sombre {
+    background: linear-gradient(180deg,#ffffff00,#00000080);
+    border-radius: 10px;
+    height: 453px;
+    width: 453px;
+    object-fit: cover;
+    margin: 30px 0px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+

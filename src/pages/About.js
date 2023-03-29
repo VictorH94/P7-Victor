@@ -1,9 +1,11 @@
 import './About.css';
+import Banner from '../components/banner/Banner';
+import img_banner from '../assets/Img_banniere_apropos.png';
 
 function About () {
     return (
         <div className="About">
-           <h1>Bienvenue dans About</h1>
+         <Banner img_banner={img_banner} />
         </div>
     )
 }

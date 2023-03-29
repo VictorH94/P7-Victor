@@ -1,0 +1,29 @@
+.OfferDetails {
+    display: block;
+    position: relative;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.OfferDetails img {
+    border-radius: 25px;
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fleche-gauche {
+    position: absolute;
+    margin-left: 25px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fleche-droite {
+    position: absolute;
+    margin-right: 25px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

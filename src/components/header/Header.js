@@ -1,19 +1,13 @@
-import logo from '../../assets/Logo.png';
-import './Header.css';
+import logo from "../../assets/Logo.png";
+import "./Header.css";
+import Navbar from "../navbar/Navbar";
 
 function Header() {
   return (
-      <header className="Header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <ul>
-            <li>
-                Accueil
-            </li>
-            <li>
-                A propos
-            </li>
-        </ul>
-      </header>
+    <header className="header">
+      <img src={logo} className="App-logo" alt="logo" />
+      <Navbar />
+    </header>
   );
 }
 
