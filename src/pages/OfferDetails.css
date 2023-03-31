@@ -27,3 +27,24 @@
     top: 50%;
     transform: translateY(-50%);
 }
+
+/* Responsive pour les téléphones portables */
+
+@media screen and (max-width: 680px) {
+    .offer img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .offerImg-sombre {
+        display: none;
+    }
+
+    .allOfferPictures {
+        background-color: white;
+    }
+
+    .offer-title {
+        font-size: 14px;
+    }
+}

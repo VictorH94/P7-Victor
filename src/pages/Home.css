@@ -44,3 +44,12 @@ main {
     top: 0px;
 }
 
+.allOfferPictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 22px 0;
+}

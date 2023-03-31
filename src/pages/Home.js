@@ -10,15 +10,17 @@ function Home () {
     <div className="Home">
       <Banner img_banner={img_banner} title="Chez vous, et partout ailleurs"/>
       <main>
-        {Offers.map((offer) => (
-          <div className="offer" key={offer.id}>
-            <Link to={"/offerDetails/" + offer.id}>
-            <h3 className="offer-title">{offer.title}</h3>
-            <img src={offer.cover} alt="offer-logo" />
-            <div className="offerImg-sombre"></div>
-            </Link>
-          </div>
-        ))}
+        <div className='allOfferPictures'>
+          {Offers.map((offer) => (
+            <div className="offer" key={offer.id}>
+              <Link to={"/offerDetails/" + offer.id}>
+              <h3 className="offer-title">{offer.title}</h3>
+              <img src={offer.cover} alt="offer-logo" />
+              <div className="offerImg-sombre"></div>
+              </Link>
+            </div>
+          ))}
+        </div>
       </main>
     </div>
   )
