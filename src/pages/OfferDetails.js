@@ -2,16 +2,20 @@ import './OfferDetails.css';
 import Offers from '../data.json';
 import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 function OfferDetails () {
-    const [offer, setOffer] = useState({})
+    const [offer, setOffer] = useState({
+        tags:[], host:{}, pictures:[]
+    })
     const [current_index_img, setCurrent_index_img] = useState(0)
     const params = useParams()
     
     useEffect(() => {
         setOffer(Offers.find(item => item.id === params.id))
     }, [params.id])
-
+    // Fonction quand on clique sur la flèche de gauche
     const slideprev = () => {
         console.log("slideprev")
         if (current_index_img < 1) {
@@ -20,7 +24,7 @@ function OfferDetails () {
             setCurrent_index_img(current_index_img -1)
         }
     }
-
+    // Fonction quand on clique sur la flèche de droite
     const slidenext = () => {
         console.log("slidenext")
         if (current_index_img >= offer.pictures.length -1) {
@@ -29,14 +33,43 @@ function OfferDetails () {
             setCurrent_index_img(current_index_img +1)
         }
     }
-
+    // Notes
+    const ratingStar = (rating) => {
+        const stars = []
+        for (let i = 0; i < 5; i++) {
+            const className = i <rating ? "fullStar" : "emptyStar"
+           stars.push(<span className={className}>&#9733;</span>)
+        }
+        return stars
+    }
+    // Affichage de l'ensemble des offres
     return (
         <div className="OfferDetails">
-           <div>
-                {offer.pictures && <img src={offer.pictures[current_index_img]} alt="" />}
-                <button onClick={slideprev} className="fleche-gauche">prev</button>
-                <button onClick={slidenext} className="fleche-droite">next</button>
-           </div>
+            <div>
+                {offer.pictures && <img src={offer.pictures[current_index_img]} alt="" className="offerImg"/>}
+                <button onClick={slideprev} className="fleche-gauche"> <FontAwesomeIcon icon={faChevronLeft} /></button>
+                <button onClick={slidenext} className="fleche-droite"> <FontAwesomeIcon icon={faChevronRight} /></button>
+            </div>
+            <section className="offerTopInfos">
+                <div>
+                    <h1>{offer.title}</h1>
+                    <p>{offer.location}</p>
+                    <div className="tags">
+                        {offer.tags.map((tag, index) => (
+                            <span key={index} className="tag">{tag}</span>
+                        ))}
+                    </div>
+                </div>
+                <div className='namePictureRating'>
+                    <div>
+                        <span className="owner-name">{offer.host.name}</span>
+                        <img src={offer.host.picture} alt="" className="owner-photo" />
+                    </div>
+                    <div className="rating">
+                    {ratingStar(offer.rating)}
+                    </div>
+                </div>
+            </section>
         </div>
     )
 }

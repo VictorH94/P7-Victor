@@ -1,6 +1,6 @@
 import './Home.css';
 import Offers from '../data.json';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 import Banner from '../components/banner/Banner';
 import img_banner from '../assets/Img_banniere_accueil.png';
 
@@ -13,11 +13,11 @@ function Home () {
         <div className='allOfferPictures'>
           {Offers.map((offer) => (
             <div className="offer" key={offer.id}>
-              <Link to={"/offerDetails/" + offer.id}>
+              <NavLink to={"/offerDetails/" + offer.id}>
               <h3 className="offer-title">{offer.title}</h3>
               <img src={offer.cover} alt="offer-logo" />
               <div className="offerImg-sombre"></div>
-              </Link>
+              </NavLink>
             </div>
           ))}
         </div>

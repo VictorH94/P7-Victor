@@ -5,7 +5,7 @@ import img_banner from '../assets/Img_banniere_apropos.png';
 function About () {
     return (
         <div className="About">
-         <Banner img_banner={img_banner} />
+            <Banner img_banner={img_banner} />
         </div>
     )
 }

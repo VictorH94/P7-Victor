@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 860px) {
     .header img {
-        height: 35px;
+        height: 45px;
     }
 
     .header a {
@@ -37,7 +37,8 @@
     }
 
     .header a {
-        font-size: 13px;
+        font-size: 15px;
         margin: auto 5px;
     }
 }
+

@@ -2,10 +2,10 @@
     display: block;
     position: relative;
     width: 80%;
-    margin: 0px auto;
+    margin: 20px auto;
 }
 
-.OfferDetails img {
+.offerImg {
     border-radius: 25px;
     height: 415px;
     width: 100%;
@@ -16,16 +16,82 @@
     position: absolute;
     margin-left: 25px;
     left: 0;
-    top: 50%;
+    top: 36%;
     transform: translateY(-50%);
+    font-size: 50px;
+    color: #fff;
+    background-color: #ffffff00;                       
+    border-style: none;
+    cursor: pointer;
 }
 
 .fleche-droite {
     position: absolute;
     margin-right: 25px;
     right: 0;
-    top: 50%;
+    top: 36%;
     transform: translateY(-50%);
+    font-size: 50px;
+    color: #fff;
+    background-color: #ffffff00;                       
+    border-style: none;
+    cursor: pointer;
+}
+
+.offerTopInfos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.offerTopInfos h1, p {
+    color: #FF6060;
+}
+
+.tag:first-of-type {
+    margin-left: 0;
+}
+
+.tag {
+    background-color: #ff6060;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    margin: auto 10px;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.owner-name {
+    font-size: 18px;
+    margin-right: 10px;
+    text-align: right;
+    width: 100px;
+    position: absolute;
+    right: 65px;
+    top: 23px;
+}
+
+.owner-photo {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
+    position: relative;
+    left: 82px;
+    top: 10px;
+}
+
+.rating {
+    margin-top: 10px;
+    position: relative;
+    left: 11px;
+    top: 7px;
+    font-size: 34px;
+}
+
+.namePictureRating {
+   position: relative;
 }
 
 /* Responsive pour les téléphones portables */
@@ -48,3 +114,12 @@
         font-size: 14px;
     }
 }
+
+.fullStar {
+    color: red;
+}
+
+.emptyStar {
+    color: silver;
+}
+

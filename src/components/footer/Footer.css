@@ -18,6 +18,8 @@
     font-size: 20px;
 }
 
+/* Responsive pour les téléphones portables */
+
 @media screen and (max-width: 680px) {
     .footer {
         min-height: 50px;
@@ -33,3 +35,4 @@
         font-size: 14px;
     }
 }
+
