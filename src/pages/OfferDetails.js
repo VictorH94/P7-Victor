@@ -4,15 +4,17 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import CollapseItem from '../components/collapseItem/collapseItem';
 
 function OfferDetails () {
     const [offer, setOffer] = useState({
-        tags:[], host:{}, pictures:[]
+        tags:[], host:{}, pictures:[], equipments: []
     })
     const [current_index_img, setCurrent_index_img] = useState(0)
     const params = useParams()
     
     useEffect(() => {
+        console.log(Offers)
         setOffer(Offers.find(item => item.id === params.id))
     }, [params.id])
     // Fonction quand on clique sur la flèche de gauche
@@ -38,7 +40,7 @@ function OfferDetails () {
         const stars = []
         for (let i = 0; i < 5; i++) {
             const className = i <rating ? "fullStar" : "emptyStar"
-           stars.push(<span className={className}>&#9733;</span>)
+           stars.push(<span className={className} key={i}>&#9733;</span>)
         }
         return stars
     }
@@ -70,6 +72,9 @@ function OfferDetails () {
                     </div>
                 </div>
             </section>
+            <CollapseItem title="description" description={offer.description}/>
+            <CollapseItem title="equipements" description={offer.equipments.join("<br />")}/>
+            
         </div>
     )
 }
