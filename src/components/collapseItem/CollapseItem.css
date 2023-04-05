@@ -1,0 +1,47 @@
+.collapseItem {
+    border-radius: 5px;
+    margin-bottom: 35px;
+    text-align: left;
+}
+
+.collapseHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF6060;
+    border-radius: 5px;
+    height: 25%;
+    min-height: 50px;
+    width: 100%;
+}
+
+.collapseHeader h3 {
+    color: #fff;
+    font-size: 18px;
+    line-height: 50px;
+    margin: 5px 10px;
+}
+
+.collapseHeader .description-dropdown {
+    background-color: transparent;
+    border-style: none;
+}
+
+.collapseText {
+    background-color: #f6f6f6;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #ff6060;
+    height: 75%;
+    margin-top: -10px;
+    min-height: 100px;
+    padding: 25px 10px 10px;
+}
+
+
+
+
+
+
+
+

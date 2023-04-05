@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
-import CollapseItem from '../components/collapseItem/collapseItem';
+import CollapseItem from '../components/collapseItem/CollapseItem';
 
 function OfferDetails () {
     const [offer, setOffer] = useState({
@@ -47,7 +47,7 @@ function OfferDetails () {
     // Affichage de l'ensemble des offres
     return (
         <div className="OfferDetails">
-            <div>
+            <div className="offerPictureFlechehautbas">
                 {offer.pictures && <img src={offer.pictures[current_index_img]} alt="" className="offerImg"/>}
                 <button onClick={slideprev} className="fleche-gauche"> <FontAwesomeIcon icon={faChevronLeft} /></button>
                 <button onClick={slidenext} className="fleche-droite"> <FontAwesomeIcon icon={faChevronRight} /></button>
@@ -72,9 +72,10 @@ function OfferDetails () {
                     </div>
                 </div>
             </section>
-            <CollapseItem title="description" description={offer.description}/>
-            <CollapseItem title="equipements" description={offer.equipments.join("<br />")}/>
-            
+            <div className="description-equipements">
+                <CollapseItem title="Description" description={offer.description} />
+                <CollapseItem title="Equipements" description={offer.equipments.join("<br />")} />
+            </div>
         </div>
     )
 }
