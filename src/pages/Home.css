@@ -53,3 +53,48 @@ main {
     width: 100%;
     padding: 22px 0;
 }
+
+@media screen and (max-width: 680px) {
+    .offer img {
+        height: 453px;
+        width: 453px;
+    }
+
+    .offerImg-sombre {
+        height: 453px;
+        width: 453px;;
+    }
+
+    main {
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 522px) {
+    .offer img {
+        height: 283px;
+        width: 353px;
+    }
+
+    .offerImg-sombre {
+        height: 283px;
+        width: 353px;
+    }
+
+    .allOfferPictures {
+        padding: 0px;
+        margin-top: -25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .offer img {
+        height: 218px;
+        width: 275px;
+    }
+
+    .offerImg-sombre {
+        height: 218px;
+        width: 275px;
+    }
+}

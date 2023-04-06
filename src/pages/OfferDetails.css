@@ -16,7 +16,7 @@
     position: absolute;
     margin-left: 25px;
     left: 0;
-    top: 34%;
+    top: 30%;
     transform: translateY(-50%);
     font-size: 50px;
     color: #fff;
@@ -29,7 +29,7 @@
     position: absolute;
     margin-right: 25px;
     right: 0;
-    top: 34%;
+    top: 30%;
     transform: translateY(-50%);
     font-size: 50px;
     color: #fff;
@@ -125,11 +125,11 @@
     }
 
     .offerPictureFlechehautbas .fleche-gauche {
-        top: 27%;
+        top: 24%;
     }
 
     .offerPictureFlechehautbas .fleche-droite {
-        top: 27%;
+        top: 24%;
     }
 
     .offerTopInfos h1, p {
@@ -184,19 +184,19 @@
 
 @media screen and (max-width: 640px) {
     .offerPictureFlechehautbas .offerImg {
-        height: 120px;
-        width: 99%;
+        height: 215px;
+        width: 100%;
     }
 
     .offerPictureFlechehautbas .fleche-gauche {
         left: -22px;
-        top: 19%;
+        top: 16%;
         font-size: 22px;
     }
 
     .offerPictureFlechehautbas .fleche-droite {
-        right: 0;
-        top: 19%;
+        right: -22px;
+        top: 16%;
         font-size: 22px;
     }
 
@@ -208,16 +208,22 @@
     }
 
     .owner-name {
-        font-size: 11px;
+        font-size: 12px;
         right: 47px;
     }
 
+    .offerTopInfos {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .offerTopInfos h1, p {
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .tag {
-        font-size: 9px;
+        font-size: 12px;
         margin: auto 4px;
     }
 
@@ -233,6 +239,19 @@
         min-height: 38px;
         width: 98%;
         font-size: 25px;
+    }
+
+    .description-equipements {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 100%;
+    }
+
+    .description-equipements>.collapseItem {
+        width: 100%;
     }
 }
 

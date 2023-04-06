@@ -32,8 +32,12 @@
 /* Responsive pour les téléphones portables */
 
 @media screen and (max-width: 680px) {
+    .header {
+        width: 90%;
+    }
+
     .header img {
-        height: 22px;
+        height: 40px;
     }
 
     .header a {
