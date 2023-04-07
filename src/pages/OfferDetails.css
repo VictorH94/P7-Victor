@@ -47,6 +47,14 @@
     color: #FF6060;
 }
 
+.offerTopInfos h1 {
+    font-size: 22px;
+}
+
+.offerTopInfos p {
+    font-size: 16px;
+}
+
 .tag:first-of-type {
     margin-left: 0;
 }
@@ -132,10 +140,6 @@
         top: 24%;
     }
 
-    .offerTopInfos h1, p {
-        font-size: 16px;
-    }
-
     .owner-name {
         font-size: 12px;
         top: 25px;
@@ -216,10 +220,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .offerTopInfos h1, p {
-        font-size: 16px;
     }
 
     .tag {

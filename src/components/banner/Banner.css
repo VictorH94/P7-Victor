@@ -31,6 +31,7 @@
     position: absolute;
     top: 35%;
     transform: translate(-50%,-50%);
+    text-align: center;
     z-index: 1;
 }
 
@@ -70,7 +71,7 @@
     }
 
     .title {
-        font-size: 12px;
+        font-size: 17px;
     }
 }
 

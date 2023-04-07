@@ -54,6 +54,8 @@ main {
     padding: 22px 0;
 }
 
+/* Format tablette et téléphones portables */
+
 @media screen and (max-width: 680px) {
     .offer img {
         height: 453px;
@@ -63,6 +65,11 @@ main {
     .offerImg-sombre {
         height: 453px;
         width: 453px;;
+    }
+
+    .offer-title {
+        font-size: 13px;
+        left: 12px;
     }
 
     main {
