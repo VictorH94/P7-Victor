@@ -2,6 +2,11 @@
     min-height: 60vh;
 }
 
+.FiabiliteRespectServiceSecurite {
+    width: 80%;
+    margin: 35px auto 35px;
+}
+
 @media screen and (max-width: 682px) {
     .About {
         min-height: 70vh;
