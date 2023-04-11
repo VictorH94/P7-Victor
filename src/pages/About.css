@@ -7,8 +7,20 @@
     margin: 35px auto 35px;
 }
 
-@media screen and (max-width: 682px) {
+@media screen and (max-width: 1060px) {
+    .FiabiliteRespectServiceSecurite {
+        margin: 10px auto 35px;
+    }
+}
+
+@media screen and (max-width: 680px) {
     .About {
         min-height: 70vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .FiabiliteRespectServiceSecurite {
+        width: 90%;
     }
 }

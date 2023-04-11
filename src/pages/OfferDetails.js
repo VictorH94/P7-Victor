@@ -7,35 +7,36 @@ import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons
 import CollapseItem from '../components/collapseItem/CollapseItem';
 
 function OfferDetails () {
-    const [offer, setOffer] = useState({
+    //Hook d'état
+    const [offer, setOffer] = useState({                  //Déclare une nouvelle variable d'état que l'on appelle "offer"
         tags:[], host:{}, pictures:[], equipments: []
     })
-    const [current_index_img, setCurrent_index_img] = useState(0)
+    const [current_index_img, setCurrent_index_img] = useState(0)                //Déclare une nouvelle variable d'état que l'on appelle "current_index_img"
     const params = useParams()
-    
+    //Hook useEffect
     useEffect(() => {
         console.log(Offers)
-        setOffer(Offers.find(item => item.id === params.id))
+        setOffer(Offers.find(item => item.id === params.id))               //On parcourt l'ensemble des item du tableau dans le data.json et on affiche l'ensemble des cards de logement
     }, [params.id])
-    // Fonction quand on clique sur la flèche de gauche
+    // Fonction permettante d'afficher de l'image précédente quand on clique sur la flèche de gauche
     const slideprev = () => {
         console.log("slideprev")
         if (current_index_img < 1) {
             setCurrent_index_img(offer.pictures.length -1)
         }else {
-            setCurrent_index_img(current_index_img -1)
+            setCurrent_index_img(current_index_img -1)             //Affichage du slide précédent
         }
     }
-    // Fonction quand on clique sur la flèche de droite
+    // Fonction permettante d'afficher de l'image suivante quand on clique sur la flèche de droite
     const slidenext = () => {
         console.log("slidenext")
-        if (current_index_img >= offer.pictures.length -1) {
+        if (current_index_img >= offer.pictures.length -1) {      //On repart au 1er slide quand on arrive au dernier slide
             setCurrent_index_img(0)
         }else {
-            setCurrent_index_img(current_index_img +1)
+            setCurrent_index_img(current_index_img +1)           //Affichage du slide suivant
         }
     }
-    // Notes
+    // Notes sur 5 étoiles
     const ratingStar = (rating) => {
         const stars = []
         for (let i = 0; i < 5; i++) {
@@ -44,7 +45,7 @@ function OfferDetails () {
         }
         return stars
     }
-    // Affichage de l'ensemble des offres
+    // Affichage de l'ensemble des cards de logement et leur détails
     return (
         <div className="OfferDetails">
             <div className="offerPictureFlechehautbas">
@@ -53,7 +54,7 @@ function OfferDetails () {
                 <button onClick={slidenext} className="fleche-droite"> <FontAwesomeIcon icon={faChevronRight} /></button>
             </div>
             <section className="offerTopInfos">
-                <div>
+                <div className="housing-infos">
                     <h1>{offer.title}</h1>
                     <p>{offer.location}</p>
                     <div className="tags">
@@ -63,7 +64,7 @@ function OfferDetails () {
                     </div>
                 </div>
                 <div className='namePictureRating'>
-                    <div>
+                    <div className="owner-infos">
                         <span className="owner-name">{offer.host.name}</span>
                         <img src={offer.host.picture} alt="" className="owner-photo" />
                     </div>

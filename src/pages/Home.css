@@ -94,14 +94,14 @@ main {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 414px) {
     .offer img {
         height: 218px;
-        width: 275px;
+        width: 336px;
     }
 
     .offerImg-sombre {
         height: 218px;
-        width: 275px;
+        width: 336px;
     }
 }

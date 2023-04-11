@@ -11,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      {/* Définir les routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

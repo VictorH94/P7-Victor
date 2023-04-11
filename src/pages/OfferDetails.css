@@ -188,76 +188,67 @@
     }
 }
 
-@media screen and (max-width: 640px) {
-    .offerPictureFlechehautbas .offerImg {
-        height: 215px;
+@media screen and (max-width: 680px) {
+    .offerTopInfos {
+       display: block;
+    }
+
+    .housing-infos {
+        margin-bottom: -30px;
+    }
+
+    .namePictureRating {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin-top: 25px;
         width: 100%;
     }
 
-    .offerPictureFlechehautbas .fleche-gauche {
-        left: -22px;
-        top: 50%;
-        font-size: 22px;
-    }
-
-    .offerPictureFlechehautbas .fleche-droite {
-        right: -22px;
-        top: 50%;
-        font-size: 22px;
-    }
-
-    .owner-photo {
-    height: 44px;
-    width: 44px;
-    left: 66px;
-    top: 7px;
+    .owner-infos {
+        margin-bottom: 0;
+        width: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
     }
 
     .owner-name {
-        font-size: 12px;
-        right: 47px;
+        font-size: 11px;
+        top: 25px;
+        right: 39px;
     }
 
-    .offerTopInfos {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .owner-photo {
+        left: -2px;
+        height: 40px;
+        width: 40px;
     }
-
-    .tag {
-        font-size: 12px;
-        margin: auto 4px;
-    }
-
-    .rating {
-        font-size: 24px;
-        margin-top: 6px;
-        position: relative;
-        left: -1px
-    }
-
-    .collapseHeader {
-        height: 18%;
-        min-height: 38px;
-        width: 98%;
-        font-size: 25px;
-    }
-
+    
     .description-equipements {
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        width: 100%;
+        display: block;
     }
 
     .description-equipements>.collapseItem {
         width: 100%;
     }
+
+    .fullStar {
+        font-size: 18px;
+    }
+
+    .collapseHeader {
+        height: 5vh;
+        min-height: 30px;
+    }
+
+    .tag {
+        font-size: 11px;
+    }
+
+    .rating {
+        left: 0px;
+    }
 }
-
-
-
 
 
