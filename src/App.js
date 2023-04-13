@@ -14,9 +14,9 @@ function App() {
       {/* Définir les routes */}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/a-propos" element={<About />} />
         <Route path="/*" element={<Error404 />} />
-        <Route path="/offerDetails/:id" element={<OfferDetails />} />
+        <Route path="/details-annonce/:id" element={<OfferDetails />} />
       </Routes>
       <Footer />
     </div>  

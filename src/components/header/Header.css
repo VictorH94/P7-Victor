@@ -9,6 +9,10 @@
 /* Responsive pour PC et tablette */
 
 @media screen and (max-width: 1090px) {
+    .header {
+        width: 90%;
+    }
+    
     .header img {
         height: 60px;
     }
@@ -32,10 +36,6 @@
 /* Responsive pour les téléphones portables */
 
 @media screen and (max-width: 680px) {
-    .header {
-        width: 80%;
-    }
-
     .header img {
         height: 40px;
     }

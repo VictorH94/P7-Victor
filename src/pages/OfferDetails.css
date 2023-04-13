@@ -164,21 +164,27 @@
     }
 }
 
+@media screen and (max-width: 1090px) {
+    .OfferDetails {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 840px) {
     .offerPictureFlechehautbas .offerImg {
         height: 170px;
     }
 
     .offerPictureFlechehautbas .fleche-gauche {
-        left: 0;
+        left: -18px;
         top: 50%;
-        font-size: 36px;
+        font-size: 27px;
     }
 
     .offerPictureFlechehautbas .fleche-droite {
-        right: 0;
+        right: -18px;
         top: 50%;
-        font-size: 36px;
+        font-size: 27px;
     }
 
     .tag {

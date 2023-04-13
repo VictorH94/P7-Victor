@@ -6,10 +6,16 @@ import { NavLink } from "react-router-dom";
 function Navbar() {
     return (
         <nav className="navbar">
-            <NavLink to="/" className="accueil">
+            <NavLink 
+            to="/" 
+            className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : "inactive"}>
                 Accueil
             </NavLink>
-            <NavLink to="/about" className="apropos">
+            <NavLink 
+            to="/a-propos"
+            className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "active" : "inactive"}>
                 A propos
             </NavLink>
         </nav>
