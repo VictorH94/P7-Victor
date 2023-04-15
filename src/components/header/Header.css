@@ -33,7 +33,7 @@
     }
 }
 
-/* Responsive pour les téléphones portables */
+/* Responsive tablettes et mobiles */
 
 @media screen and (max-width: 680px) {
     .header img {

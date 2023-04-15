@@ -5,7 +5,7 @@ import Banner from '../components/banner/Banner';
 import img_banner from '../assets/Img_banniere_accueil.png';
 
 function Home () {
-  console.log(Offers);
+  // console.log(Offers);
   return (
     <div className="Home">
       <Banner img_banner={img_banner} title="Chez vous, et partout ailleurs"/>

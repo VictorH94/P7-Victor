@@ -32,6 +32,8 @@
     text-decoration: underline;
 }
 
+/* Responsive tablettes et mobiles */
+
 @media screen and (max-width: 682px) {
     .lienRetourAccueil {
         margin-top: 182px;

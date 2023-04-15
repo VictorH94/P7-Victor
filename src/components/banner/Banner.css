@@ -35,43 +35,30 @@
     z-index: 1;
 }
 
-/* Responsive pour PC, tablettes et téléphones portables */
-
-@media screen and (max-width:  1060px) {
-    .img-banner {
-        height: 90%;
-    }
-
-    .title {
-        font-size: 29px;
-    }
-
-    .dark-banner {
-        height: 90%;
-    }
-}
-
-@media screen and (max-width:  840px) {
-    .img-banner {
-        height: 80%;
-    }
-
-    .dark-banner {
-        height: 80%;
-    }
-}
+/* Responsive tablettes et mobiles */
 
 @media screen and (max-width: 680px) {
     .Banner {
         border-radius: 25px;
-        height: 140px;
+        height: 111px;
         width: 90%;
-        margin: 0 auto;
         position: relative;
     }
 
+    .img-banner {
+        height: 100%x;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .dark-banner {
+        border-radius: 10px;
+      }
+
     .title {
-        font-size: 17px;
+        left: 37%;
+        text-align: left;
+        font-size: 22px;
     }
 }
 

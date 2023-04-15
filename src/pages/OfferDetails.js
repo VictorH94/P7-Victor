@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import CollapseItem from '../components/collapseItem/CollapseItem';
 
+// Fonction composant OfferDetails permettant de creer le caroussel d'images de la page de logement
 function OfferDetails () {
     //Hook d'état
     const [offer, setOffer] = useState({                  //Déclare une nouvelle variable d'état que l'on appelle "offer"
@@ -15,12 +16,11 @@ function OfferDetails () {
     const params = useParams()
     //Hook useEffect
     useEffect(() => {
-        console.log(Offers)
+        // console.log(Offers)
         setOffer(Offers.find(item => item.id === params.id))               //On parcourt l'ensemble des item du tableau dans le data.json et on affiche l'ensemble des cards de logement
     }, [params.id])
     // Fonction permettante d'afficher de l'image précédente quand on clique sur la flèche de gauche
     const slideprev = () => {
-        console.log("slideprev")
         if (current_index_img < 1) {
             setCurrent_index_img(offer.pictures.length -1)
         }else {
@@ -29,7 +29,6 @@ function OfferDetails () {
     }
     // Fonction permettante d'afficher de l'image suivante quand on clique sur la flèche de droite
     const slidenext = () => {
-        console.log("slidenext")
         if (current_index_img >= offer.pictures.length -1) {      //On repart au 1er slide quand on arrive au dernier slide
             setCurrent_index_img(0)
         }else {
@@ -45,7 +44,7 @@ function OfferDetails () {
         }
         return stars
     }
-    // Affichage de l'ensemble des cards de logement et leur détails
+    // Affichage de l'ensemble des cards de logement(changement des images dans le caroussel) et leur détails
     return (
         <div className="OfferDetails">
             <div className="offerPictureFlechehautbas">

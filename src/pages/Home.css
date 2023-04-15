@@ -54,17 +54,17 @@ main {
     padding: 22px 0;
 }
 
-/* Format tablette et téléphones portables */
+/* Responsive tablettes et mobiles */
 
 @media screen and (max-width: 680px) {
     .offer img {
-        height: 453px;
-        width: 453px;
+        height: 255px;
+        width: 335px;
     }
 
     .offerImg-sombre {
-        height: 453px;
-        width: 453px;;
+        height: 255px;
+        width: 335px;;
     }
 
     .offer-title {
@@ -78,30 +78,8 @@ main {
 }
 
 @media screen and (max-width: 522px) {
-    .offer img {
-        height: 283px;
-        width: 353px;
-    }
-
-    .offerImg-sombre {
-        height: 283px;
-        width: 353px;
-    }
-
     .allOfferPictures {
         padding: 0px;
-        margin-top: -25px;
-    }
-}
-
-@media screen and (max-width: 414px) {
-    .offer img {
-        height: 218px;
-        width: 336px;
-    }
-
-    .offerImg-sombre {
-        height: 218px;
-        width: 336px;
+        margin-top: -8px;
     }
 }

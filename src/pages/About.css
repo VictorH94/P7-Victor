@@ -7,9 +7,11 @@
     margin: 35px auto 35px;
 }
 
+/* Responsive tablettes et mobiles */
+
 @media screen and (max-width: 1060px) {
     .FiabiliteRespectServiceSecurite {
-        margin: 10px auto 35px;
+        margin: 35px auto 35px;
     }
 }
 

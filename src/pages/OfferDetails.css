@@ -127,7 +127,7 @@
     width: 50%;
 }
 
-/* Responsive pour les téléphones portables */
+/* Responsive pour les PC */
 
 @media screen and (max-width: 1490px) {
     .offerPictureFlechehautbas .offerImg {
@@ -164,6 +164,8 @@
     }
 }
 
+/* Responsive tablettes et mobiles */
+
 @media screen and (max-width: 1090px) {
     .OfferDetails {
         width: 90%;
@@ -172,17 +174,18 @@
 
 @media screen and (max-width: 840px) {
     .offerPictureFlechehautbas .offerImg {
-        height: 170px;
+        height: 255px;
+        border-radius: 10px;
     }
 
     .offerPictureFlechehautbas .fleche-gauche {
-        left: -18px;
+        left: -20px;
         top: 50%;
         font-size: 27px;
     }
 
     .offerPictureFlechehautbas .fleche-droite {
-        right: -18px;
+        right: -20px;
         top: 50%;
         font-size: 27px;
     }
@@ -220,8 +223,8 @@
     }
 
     .owner-name {
-        font-size: 11px;
-        top: 25px;
+        font-size: 17px;
+        top: 19px;
         right: 39px;
     }
 
@@ -229,6 +232,7 @@
         left: -2px;
         height: 40px;
         width: 40px;
+        top: 15px;
     }
     
     .description-equipements {
