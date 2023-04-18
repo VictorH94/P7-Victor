@@ -254,6 +254,7 @@
     .collapseHeader {
         height: 5vh;
         min-height: 30px;
+        border-radius: 5px;
     }
 
     .tag {
