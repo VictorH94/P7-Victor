@@ -35,14 +35,20 @@
     z-index: 1;
 }
 
-/* Responsive tablettes et mobiles */
+/* Responsive pour les tablettes et mobiles */
 
 @media screen and (max-width: 680px) {
-    .Banner {
+    .Home>.Banner {
         border-radius: 25px;
         height: 111px;
         width: 90%;
         position: relative;
+    }
+
+    .Banner {
+        border-radius: 25px;
+        height: 223px;
+        width: 90%;
     }
 
     .img-banner {

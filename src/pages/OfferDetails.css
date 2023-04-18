@@ -3,18 +3,18 @@
     margin: 20px auto;
 }
 
-.offerPictureFlechehautbas {
+.offerPictureFlecheGaucheDroite {
     position: relative;
 }
 
-.offerPictureFlechehautbas .offerImg {
+.offerPictureFlecheGaucheDroite .offerImg {
     border-radius: 25px;
     height: 415px;
     width: 100%;
     object-fit: cover;
 }
 
-.offerPictureFlechehautbas .fleche-gauche {
+.offerPictureFlecheGaucheDroite .fleche-gauche {
     position: absolute;
     left: 0;
     top: 50%;
@@ -27,7 +27,7 @@
     cursor: pointer;
 }
 
-.offerPictureFlechehautbas .fleche-droite {
+.offerPictureFlecheGaucheDroite .fleche-droite {
     position: absolute;
     right: 0;
     top: 50%;
@@ -130,15 +130,15 @@
 /* Responsive pour les PC */
 
 @media screen and (max-width: 1490px) {
-    .offerPictureFlechehautbas .offerImg {
+    .offerPictureFlecheGaucheDroite .offerImg {
         height: 240px;
     }
 
-    .offerPictureFlechehautbas .fleche-gauche {
+    .offerPictureFlecheGaucheDroite .fleche-gauche {
         top: 50%;
     }
 
-    .offerPictureFlechehautbas .fleche-droite {
+    .offerPictureFlecheGaucheDroite .fleche-droite {
         top: 50%;
     }
 
@@ -164,7 +164,7 @@
     }
 }
 
-/* Responsive tablettes et mobiles */
+/* Responsive pour les tablettes et mobiles */
 
 @media screen and (max-width: 1090px) {
     .OfferDetails {
@@ -173,18 +173,18 @@
 }
 
 @media screen and (max-width: 840px) {
-    .offerPictureFlechehautbas .offerImg {
+    .offerPictureFlecheGaucheDroite .offerImg {
         height: 255px;
         border-radius: 10px;
     }
 
-    .offerPictureFlechehautbas .fleche-gauche {
+    .offerPictureFlecheGaucheDroite .fleche-gauche {
         left: -20px;
         top: 50%;
         font-size: 27px;
     }
 
-    .offerPictureFlechehautbas .fleche-droite {
+    .offerPictureFlecheGaucheDroite .fleche-droite {
         right: -20px;
         top: 50%;
         font-size: 27px;
@@ -222,9 +222,13 @@
         justify-content: flex-end;
     }
 
+    .emptyStar {
+        font-size: 18px;
+    }
+
     .owner-name {
         font-size: 17px;
-        top: 19px;
+        top: 27px;
         right: 39px;
     }
 

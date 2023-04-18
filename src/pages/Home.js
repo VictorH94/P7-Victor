@@ -10,7 +10,7 @@ function Home () {
     <div className="Home">
       <Banner img_banner={img_banner} title="Chez vous, et partout ailleurs"/>
       <main>
-        <div className='allOfferPictures'>
+        <div className='allOfferCover'>
           {/* On parcourt chaque élément du tableau et on affiche de l'ensemble des cards de logement */}
           {Offers.map((offer) => (
             <div className="offer" key={offer.id}>

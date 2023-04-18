@@ -32,11 +32,23 @@
     text-decoration: underline;
 }
 
-/* Responsive tablettes et mobiles */
+/* Responsive pour les tablettes et mobiles */
 
 @media screen and (max-width: 682px) {
     .lienRetourAccueil {
         margin-top: 182px;
+    }
+
+    .error404 {
+        min-height: 59vh;
+    }
+
+    .title404 {
+        margin-bottom: 3px;
+    }
+
+    .description404 {
+        margin-bottom: -35px;
     }
 }
 

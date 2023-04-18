@@ -37,7 +37,7 @@
     padding: 25px 10px 10px;
 }
 
-/* Responsive tablettes et mobiles */
+/* Responsive pour les tablettes et mobiles */
 
 @media screen and (max-width: 680px) {
     .collapseHeader h3 {

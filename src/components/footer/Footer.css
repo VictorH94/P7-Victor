@@ -18,7 +18,7 @@
     font-size: 20px;
 }
 
-/* Responsive tablettes et mobiles */
+/* Responsive pour les  tablettes et mobiles */
 
 @media screen and (max-width: 680px) {
     .footer {

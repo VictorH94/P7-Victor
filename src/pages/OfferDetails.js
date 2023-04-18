@@ -21,14 +21,16 @@ function OfferDetails () {
     }, [params.id])
     // Fonction permettante d'afficher de l'image précédente quand on clique sur la flèche de gauche
     const slideprev = () => {
+        // console.log("slideprev")
         if (current_index_img < 1) {
-            setCurrent_index_img(offer.pictures.length -1)
+            setCurrent_index_img(offer.pictures.length -1)          //Au repart au dernier slide, quand on clique sur le 1er slide
         }else {
             setCurrent_index_img(current_index_img -1)             //Affichage du slide précédent
         }
     }
     // Fonction permettante d'afficher de l'image suivante quand on clique sur la flèche de droite
     const slidenext = () => {
+        // console.log("slidenext")
         if (current_index_img >= offer.pictures.length -1) {      //On repart au 1er slide quand on arrive au dernier slide
             setCurrent_index_img(0)
         }else {
@@ -39,7 +41,7 @@ function OfferDetails () {
     const ratingStar = (rating) => {
         const stars = []
         for (let i = 0; i < 5; i++) {
-            const className = i <rating ? "fullStar" : "emptyStar"
+            const className = i < rating ? "fullStar" : "emptyStar"
            stars.push(<span className={className} key={i}>&#9733;</span>)
         }
         return stars
@@ -47,7 +49,7 @@ function OfferDetails () {
     // Affichage de l'ensemble des cards de logement(changement des images dans le caroussel) et leur détails
     return (
         <div className="OfferDetails">
-            <div className="offerPictureFlechehautbas">
+            <div className="offerPictureFlecheGaucheDroite">
                 {offer.pictures && <img src={offer.pictures[current_index_img]} alt="" className="offerImg"/>}
                 <button onClick={slideprev} className="fleche-gauche"> <FontAwesomeIcon icon={faChevronLeft} /></button>
                 <button onClick={slidenext} className="fleche-droite"> <FontAwesomeIcon icon={faChevronRight} /></button>
@@ -68,7 +70,7 @@ function OfferDetails () {
                         <img src={offer.host.picture} alt="" className="owner-photo" />
                     </div>
                     <div className="rating">
-                    {ratingStar(offer.rating)}
+                        {ratingStar(offer.rating)}
                     </div>
                 </div>
             </section>

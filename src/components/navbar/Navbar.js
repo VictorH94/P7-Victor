@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
-// Fonction permettante de gérer la navigation
+// Fonction composant Navbar permettante de gérer la navigation
 function Navbar() {
     return (
         <nav className="navbar">

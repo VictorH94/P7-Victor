@@ -44,7 +44,7 @@ main {
     top: 0px;
 }
 
-.allOfferPictures {
+.allOfferCover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -54,7 +54,7 @@ main {
     padding: 22px 0;
 }
 
-/* Responsive tablettes et mobiles */
+/* Responsive pour les tablettes et mobiles */
 
 @media screen and (max-width: 680px) {
     .offer img {
@@ -78,7 +78,7 @@ main {
 }
 
 @media screen and (max-width: 522px) {
-    .allOfferPictures {
+    .allOfferCover {
         padding: 0px;
         margin-top: -8px;
     }
