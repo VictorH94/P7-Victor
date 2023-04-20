@@ -25,6 +25,7 @@
 .collapseHeader .description-dropdown {
     background-color: transparent;
     border-style: none;
+    cursor: pointer;
 }
 
 .collapseText {

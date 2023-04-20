@@ -31,6 +31,15 @@
     margin: auto 0px auto 25px;
 }
 
+/* Responsive pour les tablettes et mobiles */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+}
+
 
 
 

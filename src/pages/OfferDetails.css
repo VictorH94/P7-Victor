@@ -40,9 +40,22 @@
     cursor: pointer;
 }
 
+.slide-counter {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    left: 50%;
+    bottom: 4%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-weight: 700;
+    font-size: 16px;
+}
+
 .offerTopInfos {
     display: flex;
     justify-content: space-between;
+    margin-top: 16px;
 }
 
 .offerTopInfos h1, p {
@@ -78,9 +91,6 @@
     margin-right: 10px;
     text-align: right;
     width: 100px;
-    position: absolute;
-    right: 60px;
-    top: 23px;
 }
 
 .owner-photo {
@@ -88,16 +98,13 @@
     height: 64px;
     width: 64px;
     object-fit: cover;
-    position: relative;
-    left: 94px;
-    top: 10px;
 }
 
 .rating {
     margin-top: 10px;
     position: relative;
-    left: 3px;
-    top: 7px;
+    left: 22px;
+    top: 5px;
     font-size: 34px;
     letter-spacing: 3px;
 }
@@ -112,6 +119,12 @@
 
 .namePictureRating {
    position: relative;
+}
+
+.owner-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .description-equipements {
@@ -143,7 +156,7 @@
     }
 
     .owner-name {
-        font-size: 12px;
+        font-size: 17px;
         top: 25px;
         right: 50px
     }
@@ -157,7 +170,7 @@
     .rating {
         margin-top: 10px;
         position: relative;
-        left: 3px;
+        left: 25px;
         top: 7px;
         font-size: 30px;
         letter-spacing: 3px;
@@ -197,13 +210,19 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .slide-counter {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 680px) {
     .offerTopInfos {
        display: block;
     }
 
     .housing-infos {
-        margin-bottom: -30px;
+        margin-bottom: 0px;
     }
 
     .namePictureRating {
@@ -226,17 +245,9 @@
         font-size: 18px;
     }
 
-    .owner-name {
-        font-size: 17px;
-        top: 27px;
-        right: 39px;
-    }
-
     .owner-photo {
-        left: -2px;
         height: 40px;
         width: 40px;
-        top: 15px;
     }
     
     .description-equipements {
@@ -262,7 +273,9 @@
     }
 
     .rating {
+        margin-top: 0px;
         left: 0px;
+        top: 0px;
     }
 }
 

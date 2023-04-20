@@ -52,6 +52,9 @@ function OfferDetails () {
             <div className="offerPictureFlecheGaucheDroite">
                 {offer.pictures && <img src={offer.pictures[current_index_img]} alt="" className="offerImg"/>}
                 <button onClick={slideprev} className="fleche-gauche"> <FontAwesomeIcon icon={faChevronLeft} /></button>
+                <span className="slide-counter">
+                    {current_index_img + 1} / {offer.pictures.length}
+                </span>
                 <button onClick={slidenext} className="fleche-droite"> <FontAwesomeIcon icon={faChevronRight} /></button>
             </div>
             <section className="offerTopInfos">
