@@ -1,6 +1,6 @@
 import './OfferDetails.css';
 import Offers from '../data.json';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import CollapseItem from '../components/collapseItem/CollapseItem';
 import Gallery from '../components/gallery/Gallery';
@@ -12,11 +12,18 @@ function OfferDetails () {
         tags:[], host:{}, pictures:[], equipments: []
     })
     const params = useParams()
+    const navigate = useNavigate()
     //Hook useEffect
     useEffect(() => {
         // console.log(Offers)
-        setOffer(Offers.find(item => item.id === params.id))             //On parcourt l'ensemble des item du tableau dans le data.json et on affiche l'ensemble des cards de logement
-    }, [params.id])
+        const offer_= Offers.find(item => item.id === params.id)         //On parcourt l'ensemble des item du tableau dans le data.json et on affiche l'ensemble des cards de logement
+        if (offer_) {
+            setOffer(offer_)
+        }else {
+            navigate("/offre-non-trouvee")
+        }
+          
+    }, [params.id, navigate])
     // Notes sur 5 étoiles
     const ratingStar = (rating) => {
         const stars = []           //On créera 5 étoiles dans tous les cas

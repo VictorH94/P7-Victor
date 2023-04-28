@@ -9,7 +9,7 @@ function Gallery({offer}) {
     const slideprev = () => {
         // console.log("slideprev")
         if (current_index_img < 1) {
-            setCurrent_index_img(offer.pictures.length -1)          //Au repart au dernier slide, quand on clique sur le 1er slide sur la flèche précédent
+            setCurrent_index_img(offer.pictures.length -1)          //On repart au dernier slide, quand on clique sur le 1er slide sur la flèche précédent
         }else {
             setCurrent_index_img(current_index_img -1)             //Affichage du slide précédent
         }
@@ -27,11 +27,15 @@ function Gallery({offer}) {
         <div className="Gallery">
             <div className="offerPictureFlecheGaucheDroite">
                 {offer.pictures && <img src={offer.pictures[current_index_img]} alt="" className="offerImg"/>}
-                <button onClick={slideprev} className="fleche-gauche"> <FontAwesomeIcon icon={faChevronLeft} /></button>
-                <span className="slide-counter">
-                    {current_index_img + 1} / {offer.pictures.length}
-                </span>
-                <button onClick={slidenext} className="fleche-droite"> <FontAwesomeIcon icon={faChevronRight} /></button>
+                {offer.pictures && offer.pictures.length > 1 && 
+                    <>
+                        <button onClick={slideprev} className="fleche-gauche"> <FontAwesomeIcon icon={faChevronLeft} /></button>
+                        <span className="slide-counter">
+                            {current_index_img + 1} / {offer.pictures.length}
+                        </span>
+                        <button onClick={slidenext} className="fleche-droite"> <FontAwesomeIcon icon={faChevronRight} /></button>
+                    </>
+                }
             </div>
         </div>
     );
